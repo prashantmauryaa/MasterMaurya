@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashant University | Student Portal</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <meta name="description" content="Access your student records, attendance, and notices in one place.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Landing Specific Overrides if needed */
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="ph-fill ph-graduation-cap" style="color: var(--primary); font-size: 2rem;"></i>
+                Prashant<span style="color: var(--text-main);">Univ</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#support" class="nav-link">Support</a></li>
+                    <li><a href="login.html" class="btn btn-primary">Student Login <i
+                                class="ph-bold ph-arrow-right"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span
+                    style="color: var(--primary); font-weight: 600; font-family: var(--font-heading); background: rgba(79, 70, 229, 0.1); padding: 0.5rem 1rem; border-radius: 2rem; display: inline-block; margin-bottom: 1.5rem;">Next
+                    Gen Education</span>
+                <h1>Empowering Your <br><span class="text-gradient">Academic Journey</span></h1>
+                <p>Seamlessly manage your classes, track marks, and stay updated with campus news. The future of student
+                    management is here.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="login.html" class="btn btn-primary" style="padding: 1rem 2rem; font-size: 1.125rem;">Get
+                        Started</a>
+                    <a href="#features" class="btn btn-outline" style="padding: 1rem 2rem; font-size: 1.125rem;">Learn
+                        More</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <!-- Abstract floating cards decoration -->
+                <div class="hero-card" style="top: 20px; right: 20px; z-index: 2;">
+                    <div style="display: flex; align-items: center; gap: 1rem; mb-4; margin-bottom: 1rem;">
+                        <div style="background: #dbeafe; padding: 10px; border-radius: 50%;">
+                            <i class="ph-fill ph-chart-bar" style="color: #2563eb; font-size: 24px;"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1rem;">Academic Performance</h4>
+                            <p style="margin: 0; font-size: 0.8rem; color: #6b7280;">Weekly Update</p>
+                        </div>
+                    </div>
+                    <div style="height: 8px; background: #f3f4f6; border-radius: 4px; overflow: hidden;">
+                        <div style="width: 85%; height: 100%; background: var(--gradient-primary);"></div>
+                    </div>
+                </div>
+
+                <div class="hero-card secondary">
+                    <div
+                        style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span style="font-weight: 600; font-size: 0.9rem;">Attendance</span>
+                        <span style="color: #10b981; font-weight: 600; font-size: 0.9rem;">98%</span>
+                    </div>
+                    <div style="display: flex; gap: 4px;">
+                        <div style="height: 30px; flex: 1; background: #818cf8; border-radius: 4px;"></div>
+                        <div style="height: 30px; flex: 1; background: #818cf8; border-radius: 4px;"></div>
+                        <div style="height: 30px; flex: 1; background: #c7d2fe; border-radius: 4px;"></div>
+                        <div style="height: 30px; flex: 1; background: #818cf8; border-radius: 4px;"></div>
+                        <div style="height: 30px; flex: 1; background: #818cf8; border-radius: 4px;"></div>
+                    </div>
+                </div>
+
+                <!-- Decorative Circle -->
+                <div
+                    style="position: absolute; width: 450px; height: 450px; border: 2px dashed rgba(79, 70, 229, 0.2); border-radius: 50%; animation: spin 20s linear infinite;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="font-size: 2.5rem;">Why Students Love <span class="text-gradient">Prashant</span></h2>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto; margin-top: 1rem;">Experience a
+                    unified platform designed to make your campus life easier, more organized, and productive.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="ph-duotone ph-chalkboard-teacher"></i></div>
+                    <h3>Smart Dashboard</h3>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">View your daily schedule, upcoming classes,
+                        and pending assignments at a glance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="ph-duotone ph-chart-line-up"></i></div>
+                    <h3>Result Analytics</h3>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Track your academic progress with detailed
+                        graphics and semester-wise comparisons.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="ph-duotone ph-users-three"></i></div>
+                    <h3>Campus Connect</h3>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Stay connected with faculty and peers
+                        through our integrated messaging system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" style="padding: 100px 0; background: #f9fafb;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div>
+                    <span
+                        style="color: var(--primary); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.875rem;">About
+                        Us</span>
+                    <h2 style="font-size: 2.5rem; margin: 1rem 0 1.5rem;">Legacy of <span
+                            class="text-gradient">Excellence</span></h2>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Founded in 1985, Prashant University has
+                        been at the forefront of educational innovation. We believe in nurturing talent, fostering
+                        creativity, and empowering students to become global leaders.</p>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem;">Our campus features state-of-the-art
+                        laboratories, a world-class library, and a vibrant student community that thrives on
+                        collaboration and diversity.</p>
+
+                    <div style="display: flex; gap: 2rem;">
+                        <div>
+                            <h4 style="font-size: 2rem; color: var(--primary); margin-bottom: 0;">50+</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Courses Offered</p>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 2rem; color: var(--primary); margin-bottom: 0;">10k+</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Alumni Network</p>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 2rem; color: var(--primary); margin-bottom: 0;">100%</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Placement Assistance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="position: relative;">
+                    <div
+                        style="position: absolute; top: -20px; left: -20px; width: 100px; height: 100px; background: var(--secondary); opacity: 0.1; border-radius: 50%;">
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80"
+                        alt="University Campus"
+                        style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); position: relative; z-index: 1;">
+                    <div
+                        style="position: absolute; bottom: -30px; right: -30px; background: white; padding: 1.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); z-index: 2;">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div
+                                style="background: rgba(16, 185, 129, 0.1); padding: 10px; border-radius: 50%; color: #10b981;">
+                                <i class="ph-fill ph-certificate" style="font-size: 24px;"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin: 0; font-size: 1rem;">ISO Certified</h4>
+                                <p style="margin: 0; font-size: 0.8rem; color: var(--text-muted);">World Class Standards
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" style="padding: 100px 0; background: white;">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="font-size: 2.5rem;">Student <span class="text-gradient">Support</span></h2>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto; margin-top: 1rem;">Facing issues
+                    with the portal? Our support team is just a click away.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; margin-top: 3rem;">
+                <!-- Contact Info -->
+                <div>
+                    <div class="glass-card"
+                        style="padding: 2rem; background: var(--gradient-primary); color: white; height: 100%;">
+                        <h3 style="color: white; margin-bottom: 2rem;">Contact Information</h3>
+
+                        <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+                            <i class="ph-fill ph-map-pin" style="font-size: 1.5rem; opacity: 0.8;"></i>
+                            <div>
+                                <h4 style="color: white; font-size: 1.1rem; margin-bottom: 0.5rem;">Campus Address</h4>
+                                <p style="color: rgba(255,255,255,0.8);">123 Education Lane, Knowledge Park II,<br>New
+                                    Delhi, 110001</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+                            <i class="ph-fill ph-phone" style="font-size: 1.5rem; opacity: 0.8;"></i>
+                            <div>
+                                <h4 style="color: white; font-size: 1.1rem; margin-bottom: 0.5rem;">Phone</h4>
+                                <p style="color: rgba(255,255,255,0.8);">+91 98765 43210 (Student Helpline)</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 1rem;">
+                            <i class="ph-fill ph-envelope" style="font-size: 1.5rem; opacity: 0.8;"></i>
+                            <div>
+                                <h4 style="color: white; font-size: 1.1rem; margin-bottom: 0.5rem;">Email</h4>
+                                <p style="color: rgba(255,255,255,0.8);">support@prashant.edu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="glass-card"
+                    style="background: white; border: 1px solid #e5e7eb; padding: 2.5rem; box-shadow: var(--shadow-md);">
+                    <form>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                            <div>
+                                <label
+                                    style="display: block; font-weight: 500; margin-bottom: 0.5rem; color: var(--text-main);">Your
+                                    Name</label>
+                                <input type="text" placeholder="Prashant"
+                                    style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: var(--radius-md); font-family: var(--font-body);">
+                            </div>
+                            <div>
+                                <label
+                                    style="display: block; font-weight: 500; margin-bottom: 0.5rem; color: var(--text-main);">Student
+                                    ID</label>
+                                <input type="text" placeholder="ST-2024-XXX"
+                                    style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: var(--radius-md); font-family: var(--font-body);">
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <label
+                                style="display: block; font-weight: 500; margin-bottom: 0.5rem; color: var(--text-main);">Subject</label>
+                            <input type="text" placeholder="e.g. Login Issue"
+                                style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: var(--radius-md); font-family: var(--font-body);">
+                        </div>
+
+                        <div style="margin-bottom: 2rem;">
+                            <label
+                                style="display: block; font-weight: 500; margin-bottom: 0.5rem; color: var(--text-main);">Message</label>
+                            <textarea rows="4" placeholder="Describe your issue..."
+                                style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: var(--radius-md); font-family: var(--font-body); resize: vertical;"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message <i
+                                class="ph-bold ph-paper-plane-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3 style="color: white; margin-bottom: 0.5rem;">PrashantUniv</h3>
+                    <p style="color: #9ca3af; font-size: 0.9rem;">Excellence in Education</p>
+                </div>
+                <div style="text-align: right; color: #9ca3af; font-size: 0.9rem;">
+                    <p>&copy; 2024 Prashant University. All rights reserved.</p>
+                    <div style="margin-top: 0.5rem; display: flex; gap: 1rem; justify-content: flex-end;">
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</body>
+
+</html>
