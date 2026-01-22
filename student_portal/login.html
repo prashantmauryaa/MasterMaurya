@@ -39,13 +39,13 @@
                 </p>
             </div>
 
-            <form action="dashboard.html">
+            <form id="loginForm">
                 <div class="form-group">
                     <label class="form-label">Student ID</label>
                     <div style="position: relative;">
                         <i class="ph-bold ph-identification-card"
                             style="position: absolute; top: 50%; left: 1rem; transform: translateY(-50%); color: rgba(255,255,255,0.5);"></i>
-                        <input type="text" class="form-input" placeholder="e.g. ST-2024-001"
+                        <input type="text" id="studentId" class="form-input" placeholder="e.g. 21240706"
                             style="padding-left: 2.8rem;" required>
                     </div>
                 </div>
@@ -55,8 +55,10 @@
                     <div style="position: relative;">
                         <i class="ph-bold ph-lock-key"
                             style="position: absolute; top: 50%; left: 1rem; transform: translateY(-50%); color: rgba(255,255,255,0.5);"></i>
-                        <input type="password" class="form-input" placeholder="••••••••" style="padding-left: 2.8rem;"
-                            required>
+                        <input type="password" id="password" class="form-input" placeholder="••••••••"
+                            style="padding-left: 2.8rem; padding-right: 2.5rem;" required>
+                        <i class="ph-bold ph-eye-slash" id="togglePassword"
+                            style="position: absolute; top: 50%; right: 1rem; transform: translateY(-50%); cursor: pointer; color: rgba(255,255,255,0.6);"></i>
                     </div>
                 </div>
 
@@ -70,6 +72,43 @@
 
                 <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Sign In</button>
             </form>
+
+            <script>
+                const togglePassword = document.querySelector('#togglePassword');
+                const passwordInput = document.querySelector('#password');
+
+                togglePassword.addEventListener('click', function () {
+                    // toggle the type attribute
+                    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                    passwordInput.setAttribute('type', type);
+
+                    // toggle the icon
+                    if (this.classList.contains('ph-eye-slash')) {
+                        this.classList.remove('ph-eye-slash');
+                        this.classList.add('ph-eye');
+                    } else {
+                        this.classList.remove('ph-eye');
+                        this.classList.add('ph-eye-slash');
+                    }
+                });
+
+                document.getElementById('loginForm').addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    const studentId = document.getElementById('studentId').value;
+                    const password = passwordInput.value;
+
+                    // Hardcoded credentials for "Prshant Maurya"
+                    if (studentId === '21240706' && password === 'admin123') {
+                        // Simulating login
+                        localStorage.setItem('isLoggedIn', 'true');
+                        localStorage.setItem('studentName', 'Prshant Maurya');
+                        window.location.href = 'dashboard.html'; // Redirect to dashboard to see everything
+                    } else {
+                        alert('Invalid Credentials! Try ID: 21240706 and Password: admin123');
+                    }
+                });
+            </script>
 
             <p style="text-align: center; margin-top: 2rem; font-size: 0.9rem; color: rgba(255,255,255,0.6);">
                 New student? <a href="#" style="color: white; font-weight: 600;">Contact Admin</a>
