@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: hostelxwall.netlify.app
+Sitemap: https://www.prashant.edu/sitemap.xml
